@@ -1,0 +1,26 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload and Display Images</title>
+</head>
+<body>
+    <h2>แสดงและอัปโหลดรูปภาพ</h2>
+
+    <?php foreach ($images as $image): ?>
+        <div>
+            <p>แสดงรูปที่ <?php echo $image['id']; ?> ที่เอามาจาก DB:</p>
+            <img src="<?php echo $image['file_path']; ?>" width="200"><br>
+
+            <form action="news_update.php" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="image_id" value="<?php echo $image['id']; ?>">
+                <input type="file" name="news_image<?php echo $image['id']; ?>" accept="image/*">
+                <button type="submit">อัปโหลด</button>
+            </form>
+            <br><br>
+        </div>
+    <?php endforeach; ?>
+    
+</body>
+</html> -->
